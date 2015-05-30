@@ -1,7 +1,4 @@
 <?php
-//Operadores aritméticos
-
-// 1 + 2 x 8 + 5 - 3 ¿Qué resultado da? (A)19 (B)26 (C)24
 
 $a = array('one','two');
 $b = array('three','four','five');
@@ -12,5 +9,5 @@ $b = array('three','four','five');
  * serán ignorados los elementos correspondientes del array de la derecha.
  */
 
-print_r($a+$b);
-//print_r(array_merge($a,$b));
+//print_r($a+$b);
+print_r(array_merge($a,$b));

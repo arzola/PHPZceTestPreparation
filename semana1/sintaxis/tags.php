@@ -1,5 +1,7 @@
 <?php
-	echo 'Good';
+	${hola-amigos} = 'Oscr';
+	$${hola-amigos} = 'Padrino';
+	echo $Oscr;
 ?>
 
 <script language="php">
