@@ -28,7 +28,7 @@ foreach ($productos as $producto) {
     $descripcion = $producto[2];
 }
 
-foreach ($productos as list($nombre, $precio, $descripcion)) {
+foreach ($productos as list($nombre,,$descripcion)) {
     echo $nombre."<br>";
 }
 

@@ -23,3 +23,5 @@ updateCounter();
 updateCounter();
 updateCounter();
 updateCounter();
+
+//echo $counter;

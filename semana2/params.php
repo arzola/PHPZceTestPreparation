@@ -12,10 +12,12 @@ function sumaNumeros(){
 	return 0;
 }
 
-function doSomething(Array $params){
+function doSomething($params){
 	$str = '';
+	$pam['valido'] = true;
 	if(array_key_exists('valido', $params)){
 		$str.= 'Validando algo... ';
+		$pam['valido'] = $params['valido'];
 	}
 	if(array_key_exists('order', $params)){
 		$str.= 'APLICANDO ORDER BY '.$params['order'];
@@ -32,4 +34,9 @@ $parametros = array('valido'=>true,'order'=>'ASC');
 
 echo doSomething($parametros);
 
-echo doSomething(array('valido'=>true));
+echo doSomething([
+		'valido'=>true,
+		'success'=>function(e){
+		echo 'hola';
+		}
+		]);

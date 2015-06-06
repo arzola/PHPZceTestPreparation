@@ -20,7 +20,7 @@ echo '<pre>';
 print_r($numeros);
 echo '</pre>';
 
-$numero = 10;
+/*$numero = 10;
 
 function restaDos(&$numero){
     $numero-=2;
@@ -30,6 +30,6 @@ echo 'Numero';
 echo '<pre>';
 restaDos($numero);
 print_r($numero);
-echo '</pre>';
+echo '</pre>';*/
 
 
