@@ -1,5 +1,4 @@
 <?php
-
 // funcion personalizada de gestion de errores
 function custom_error_handler($errno, $errstr, $errfile, $errline) {
     if (!(error_reporting() & $errno)) {
