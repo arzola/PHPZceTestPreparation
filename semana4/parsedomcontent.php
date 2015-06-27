@@ -1,6 +1,6 @@
 <!doctype html>
 <?php
-
+error_reporting(E_ALL - E_WARNING);
 /*
  * SimpleXml y Xpath
  */

@@ -1,9 +1,9 @@
 <?php
-
+/* hace que funcionen como instancias aunque sean publicas**/
 class Car {
 	public static function run() {
 		//late static binding
-		return self::getName();
+		return static::getName();
 	}
 
 	private static function getName() {

@@ -1,6 +1,6 @@
 <!doctype html>
 <?php
-
+error_reporting(E_ALL - E_WARNING);
 /*
  * SimpleXml y Xpath
  */
@@ -13,7 +13,7 @@ $doc = new DOMDocument();
 $doc->loadHTML($html);
 $sxml = simplexml_import_dom($doc);
 
-$tweets = $sxml->xpath('//p[@class="ProfileTweet-text js-tweet-text u-dir"]');
+$tweets = $sxml->xpath('//p[@class="TweetTextSize TweetTextSize--16px js-tweet-text tweet-text"]');
 
 ?>
 <html>

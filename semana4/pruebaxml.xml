@@ -1,0 +1,45 @@
+<?xml version='1.0' standalone='yes'?>
+<movies>
+ <movie>
+  <title>Ethernal Sunshine</title>
+  <characters>
+   <character>
+    <name>Joel Barish</name>
+    <actor>Jim Carrey</actor>
+   </character>
+   <character>
+    <name>Clementine Kruczynski</name>
+    <actor>Kate Winslet</actor>
+   </character>
+  </characters>
+  <plot>
+   "El eterno resplandor de una mente sin recuerdos" es una comedia dramática interpretada por Jim Carrey y Kate Winslet que en algunas ciudades de países hispanos también está conocida como "Olvídate de Mi" y cuenta la historia de Joel, un hombre que vive traumatizado por la ruptura con su novia a la que ha querido durante toda su vida; Clementine, una joven para nada convencional que lo hipnotizó tiempo atrás y con la que ha vivido una bonita relación de amor.
+  </plot>
+  <great-lines>
+   <line>La arena está sobrevalorada. Son solo rocas diminutas.</line>
+  </great-lines>
+  <rating type="thumbs">7</rating>
+  <rating type="stars">5</rating>
+ </movie>
+  <movie>
+  <title>500 days of Summer</title>
+  <characters>
+   <character>
+    <name>Tom</name>
+    <actor>Joseph Gordon-Levitt</actor>
+   </character>
+   <character>
+    <name>Summer</name>
+    <actor>Zooey Deschanel</actor>
+   </character>
+  </characters>
+  <plot>
+   Tom Hansen (Joseph Gordon-Levitt) es un arquitecto que trabaja escribiendo tarjetas de felicitación y que cree en el amor verdadero. Summer Finn (Zooey Deschanel) dejó de creer en esta concepción del amor en cuanto sus padres se divorciaron
+  </plot>
+  <great-lines>
+   <line>Esto es una historia de chico conoce a chica. Pero más vale que sepas de entrada que no es una historia de amor.</line>
+  </great-lines>
+  <rating type="thumbs">10</rating>
+  <rating type="stars">8</rating>
+ </movie>
+</movies>

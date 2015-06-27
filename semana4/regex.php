@@ -2,7 +2,7 @@
 
 //delimitadores / # !
 
-$patron = "!^([A-Z]{2})([0-3]*)!";
+$patron = "/(^[a-zA-Z]{0,30})+@+([a-z0-9\-]{2,30})+(\.)+([a-z]{2,3})/";
 
 //uso de los operadores * y +
 //cuantificadores {}
@@ -40,6 +40,8 @@ a{3,6}     Between 3 and 6 of a
 
 var_dump(preg_match($patron, '283OScar'));
 var_dump(preg_match($patron, 'Arzola'));
-var_dump(preg_match($patron, 'OS', $coincidencias));
-print_r($coincidencias);
+//var_dump(preg_match($patron, 'OS', $coincidencias));
+//print_r($coincidencias);
 var_dump(preg_match($patron, 'OS2E12'));
+var_dump(preg_match($patron, 'mogurbon@gmail.com',$match));
+print_r($match);
