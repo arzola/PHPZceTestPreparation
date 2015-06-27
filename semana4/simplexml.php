@@ -53,6 +53,7 @@ $xmlstr = <<<XML
 XML;
 
 //Obteniendo información del XML
+//Si no se selecciona la movie especifica, el objeto tiene un iterador y el puntero esta en el primer elemento
 
 $movies = new SimpleXMLElement($xmlstr);
 
@@ -63,14 +64,14 @@ var_dump($movies->movie[0]->title);
 
 //Tener en cuenta los guiones (hyphen)
 
-//echo $movies->movie->{'great-lines'}->line . "</br>";
+echo $movies->movie->{'great-lines'}->line . "</br>";
 echo $movies->movie[0]->{'great-lines'}->line . "</br>";
 echo $movies->movie[1]->{'great-lines'}->line . "</br>";
 
 /* For cada <character>, imprimimos diferentes nombres <name>. */
 
 foreach ($movies->movie->characters->character as $character) {
-    //echo $character->name, ' interpretado  por ', $character->actor, PHP_EOL . "</br>";
+    echo $character->name, ' interpretado  por ', $character->actor, PHP_EOL . "</br>";
 }
 
 //Con xPath podemos hacer busquedas sobre el DOM del XML
@@ -89,7 +90,7 @@ foreach ($stars as $s) {
 
 //CUIDADOOO :D si quieres comparar un elemento con un string debes castearlo
 
-if ((string)$movies->movie->title === 'Ethernal Sunshine') {
+if ($movies->movie->title === 'Ethernal Sunshine') {
     print 'Mi favorita.';
 }
 
@@ -106,5 +107,5 @@ foreach ($characters as $mono) {
 }
 ?>
 <pre>
-    <?php //echo $movies->asXML(); ?>
+    <?php echo $movies->asXML(); ?>
 </pre>

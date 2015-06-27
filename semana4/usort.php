@@ -1,11 +1,16 @@
 <?php
 
 /*
- * La función de comparación debe devolver un entero menor,
- * igual o mayor que cero si el primer argumento se considera
- * que sea respectivamente menor, en caso contrario un entero positivo.
+ * Si el primer elemento es menor devolver un entero menor a 0
+ * Si el primer elemento es mayor devolver un entero mayor a 0
+ * Si son iguales devolver 0
  * Es importante checar la respuesta de usort ya que debe de compararse con ===
  */
+
+//sort (ordena) y re-indexa las llaves
+//asort (ordena) y mantiene las llaves
+//ksort (ordena) por llaves
+//natsort (orden natural)
 
 
 $personajes[] = array('apellido' => 'Bros', 'edad' => 10, 'nombre' => 'Mario');
@@ -13,27 +18,27 @@ $personajes[] = array('apellido' => 'Bad', 'edad' => 8, 'nombre' => 'Toad');
 $personajes[] = array('apellido' => 'Princess', 'edad' => 100, 'nombre' => 'Peach');
 $personajes[] = array('apellido' => 'Vago', 'edad' => 1, 'nombre' => 'Luigi');
 $personajes[] = array('apellido' => 'Azure', 'edad' => 76, 'nombre' => 'Bowser');
-$cortado = array_slice($personajes,2,3);
+$personajes[] = array('apellido' => 'Ade', 'edad' => 33, 'nombre' => 'Kerrigan');
 ?>
 
 <?php
-    //$array1 = $array2 = array("img12.png", "img10.png", "img2.png", "img1.png");
-    //asort($array1);
+    $array1 = $array2 = array("img12.png", "img10.png", "img2.png", "img1.png");
+    sort($array1);
 ?>
 
 <pre>
-    <?php //print_r($array1); ?>
+    <?php print_r($array1); ?>
 </pre>
 
 <pre>
-    <?php //natsort($array1); ?>
-    <?php //print_r($array1); ?>
+    <?php natsort($array1); ?>
+    <?php print_r($array1); ?>
 </pre>
 
 <pre>
-    <?php //print_r($personajes); ?>
-    <?php //ksort($personajes); ?>
-    <?php //print_r($personajes); ?>
+    <?php print_r($personajes); ?>
+    <?php asort($personajes); ?>
+    <?php print_r($personajes); ?>
 </pre>
 
 <?php
@@ -50,11 +55,11 @@ function ordernarPorNombre ($a, $b) {
 ?>
 
 <pre>
-    <?php //usort($personajes, 'ordernarPorNombre');
+    <?php usort($personajes, 'ordernarPorEdad');
     ?>
     <?php //print_r($personajes); ?>
 </pre>
 
 <pre>
-    <?php print_r($cortado); ?>
+    <?php //print_r($cortado); ?>
 </pre>
